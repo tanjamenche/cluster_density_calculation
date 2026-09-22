@@ -52,9 +52,9 @@ The number of rows in this dataset is interpreted as the number of clusters.
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
 For example, consider the following pair of files:
 
-sample01_ROI_picks.yaml
+protein1_ROI_picks.yaml
 
-sample01_ROI_dbscan_centers.hdf5
+protein1_ROI_dbscan_centers.hdf5
 
 With:
 
@@ -64,25 +64,25 @@ With:
 
 both files have the base name:
 
-sample01
+protein1
 
 The script uses this common base name to associate the YAML file with the corresponding HDF5 file.
 Because the script uses the base name to match files, each input file pair must have a unique base name within the folders being processed. For example:
 ```
 input_data/ 
 
-├── experiment_1/ 
+├── cell1/ 
 
-│ ├── experiment1_sample01_ROI_picks.yaml 
+│ ├── cell1_protein1_ROI_picks.yaml 
 
-│ └── experiment1_sample01_ROI_dbscan_centers.hdf5 
+│ └── cell1_protein1_ROI_dbscan_centers.hdf5 
 
 │ 
-└── experiment_2/ 
+└── cell2/ 
 
-  ├── experiment2_sample01_ROI_picks.yaml 
+  ├── cell2_protein1_ROI_picks.yaml 
   
-  └── experiment2_sample01_ROI_dbscan_centers.hdf5
+  └── cell2_protein1_ROI_dbscan_centers.hdf5
 ```
   
 
