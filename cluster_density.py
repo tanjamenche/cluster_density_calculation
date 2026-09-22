@@ -50,7 +50,7 @@ Because the script uses the base name to match files, each input file pair must 
 
 How to use:
 -----------
-1. Edit the variables below to match your data and requirements.
+1. Edit the variables in the User Input Section below to match your data and requirements.
 2. Run the script.
 3. The script will process the files and output a CSV file named 'cluster_density.csv' in the specified folder.
 """
