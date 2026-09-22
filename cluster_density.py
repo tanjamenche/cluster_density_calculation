@@ -37,13 +37,13 @@ The YAML files contain the polygon vertices of the ROI. The polygon vertices are
 The HDF5 files contain the cluster centers of the ROI. The cluster centers are used to calculate the number of clusters in the ROI.
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
 For example, consider the following pair of files:
-cell1_ROI_picks.yaml
-cell1_ROI_dbscan_centers.hdf5
+protein1_ROI_picks.yaml
+protein1_ROI_dbscan_centers.hdf5
 With:
 yaml_file_suffix = "_ROI_picks"
 hdf5_file_suffix = "_ROI_dbscan_centers"
 both files have the base name:
-cell1
+protein1
 The script uses this common base name to associate the YAML file with the corresponding HDF5 file.
 Because the script uses the base name to match files, each input file pair must have a unique base name within the folders being processed.
 
