@@ -51,24 +51,40 @@ The number of rows in this dataset is interpreted as the number of clusters.
 
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
 For example, consider the following pair of files:
+
 sample01_ROI_picks.yaml
+
 sample01_ROI_dbscan_centers.hdf5
+
 With:
+
 `file_suffix = "_ROI_picks"`
+
 `hdf5_file_suffix = "_ROI_dbscan_centers"`
+
 both files have the base name:
+
 sample01
+
 The script uses this common base name to associate the YAML file with the corresponding HDF5 file.
 Because the script uses the base name to match files, each input file pair must have a unique base name within the folders being processed. For example:
+```
 input_data/ 
+
 ├── experiment_1/ 
+
 │ ├── experiment1_sample01_ROI_picks.yaml 
+
 │ └── experiment1_sample01_ROI_dbscan_centers.hdf5 
+
 │ 
 └── experiment_2/ 
-  ├── experiment2_sample01_ROI_picks.yaml 
-  └── experiment2_sample01_ROI_dbscan_centers.hdf5
 
+  ├── experiment2_sample01_ROI_picks.yaml 
+  
+  └── experiment2_sample01_ROI_dbscan_centers.hdf5
+```
+  
 
 ## Configuration
 
@@ -125,4 +141,4 @@ The output file contains the following columns:
 | `Number of clusters`             | Number of rows in the HDF5 `locs` dataset          |
 | `Cluster density (clusters/µm²)` | Number of clusters divided by ROI area             |
 
-It is saved in the input folder path.
+The output is saved in the input folder path.
