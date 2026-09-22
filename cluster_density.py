@@ -40,10 +40,10 @@ For example, consider the following pair of files:
 sample01_ROI_picks.yaml
 sample01_ROI_dbscan_centers.hdf5
 With:
-file_suffix = "_ROI_picks"
+yaml_file_suffix = "_ROI_picks"
 hdf5_file_suffix = "_ROI_dbscan_centers"
 both files have the base name:
-sample01
+cell1
 The script uses this common base name to associate the YAML file with the corresponding HDF5 file.
 Because the script uses the base name to match files, each input file pair must have a unique base name within the folders being processed.
 
