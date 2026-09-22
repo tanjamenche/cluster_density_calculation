@@ -1,7 +1,7 @@
 """
 Cluster Density Calculation
 
-This script calculates the density of detected clusters within user-defined polygonal regions of interest (ROIs). 
+This script calculates the density of detected clusters (from single-molecule localization microscopy (SMLM) experiments) within user-defined polygonal regions of interest (ROIs). 
 It processes all YAML and HDF5 files in a specified folder (and its subfolders) that match given file suffixes.
 It reads polygon vertices from each YAML file, scales them by a user-provided pixel size (in nanometers),
 calculates the area of each polygon (in square micrometers), and counts the number of clusters (rows) in the 'locs' dataset of each HDF5 file.
@@ -57,9 +57,9 @@ How to use:
 
 # --- User Input Section (edit these variables) ---
 folder_path = r"C:\cluster_density\example_data\input_data"  # <-- Set your folder path here; example: folder_path = r"C:\cluster_density\example_data\input_data"
-yaml_file_suffix = "_ROI_picks"                                                   # <-- Set your ROI YAML file suffix here; example: yaml_file_suffix = "_ROI_picks"
-hdf5_file_suffix = "_ROI_dbscan_centers"                                # <-- Set your HDF5 file suffix here, example; hdf5_file_suffix = "_ROI_dbscan_centers"
-pixel_size_nm = 157.0                                                        # <-- Set your pixel size in nanometers here; example: pixel_size_nm = 157.0
+yaml_file_suffix = "_ROI_picks"                     # <-- Set your ROI YAML file suffix here; example: yaml_file_suffix = "_ROI_picks"
+hdf5_file_suffix = "_ROI_dbscan_centers"            # <-- Set your HDF5 file suffix here, example; hdf5_file_suffix = "_ROI_dbscan_centers"
+pixel_size_nm = 157.0                               # <-- Set your pixel size in nanometers here; example: pixel_size_nm = 157.0
 
 
 
