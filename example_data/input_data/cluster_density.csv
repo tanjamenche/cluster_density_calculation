@@ -1,0 +1,5 @@
+﻿Base Name,YAML File,Area (µm²),HDF5 File,Number of clusters,Cluster density (clusters/µm²)
+cell1_protein1,cell1_protein1_ROI_picks.yaml,555.233655,cell1_protein1_ROI_dbscan_centers.hdf5,2536,4.567446
+cell1_protein2,cell1_protein2_ROI_picks.yaml,555.233655,cell1_protein2_ROI_dbscan_centers.hdf5,6249,11.254721
+cell2_protein1,cell2_protein1_ROI_picks.yaml,551.592189,cell2_protein1_ROI_dbscan_centers.hdf5,4364,7.911642
+cell2_protein2,cell2_protein2_ROI_picks.yaml,551.592189,cell2_protein2_ROI_dbscan_centers.hdf5,3500,6.345268
