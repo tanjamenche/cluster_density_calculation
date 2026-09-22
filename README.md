@@ -108,7 +108,7 @@ conda install --file requirements.txt
 ## Usage
 
 1. Place the YAML and HDF5 input files in the specified folder and/or its subfolders.
-2. Open `cluster_density_v1.py`.
+2. Open `cluster_density.py`.
 3. Set `folder_path`, `file_suffix`, `hdf5_file_suffix`, and `pixel_size_nm`.
 4. Open environment:
 ```PowerShell
