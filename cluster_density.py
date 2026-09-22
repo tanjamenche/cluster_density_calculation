@@ -56,7 +56,7 @@ How to use:
 """
 
 # --- User Input Section (edit these variables) ---
-folder_path = r"C:\Software\GitHub\cluster_density\example_data\input_data"  # <-- Set your folder path here; example: folder_path = r"C:\cluster_density\example_data\input_data"
+folder_path = r"C:\cluster_density\example_data\input_data"  # <-- Set your folder path here; example: folder_path = r"C:\cluster_density\example_data\input_data"
 yaml_file_suffix = "_ROI_picks"                                                   # <-- Set your ROI YAML file suffix here; example: yaml_file_suffix = "_ROI_picks"
 hdf5_file_suffix = "_ROI_dbscan_centers"                                # <-- Set your HDF5 file suffix here, example; hdf5_file_suffix = "_ROI_dbscan_centers"
 pixel_size_nm = 157.0                                                        # <-- Set your pixel size in nanometers here; example: pixel_size_nm = 157.0
