@@ -11,7 +11,7 @@ Parts of this script were developed with assistance from OpenAI's ChatGPT and Cu
 
 Author: Tanja Menche
 Affiliation: Research group of Mike Heilemann, Goethe University Frankfurt am Main, Germany
-Version: 1.0
+Version: v1.0.0
 Date: 2026-09-22
 License: MIT
 Copyright (c) 2026 Tanja Menche
