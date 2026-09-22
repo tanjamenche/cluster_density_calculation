@@ -13,15 +13,6 @@ Author: Tanja Menche
 Affiliation: Research group of Mike Heilemann, Goethe University Frankfurt am Main, Germany
 Version: v1.0.0
 Date: 2026-09-22
-License: MIT
-Copyright (c) 2026 Tanja Menche
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), 
-to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 User Inputs (edit the variables below):
@@ -33,8 +24,9 @@ User Inputs (edit the variables below):
 
 Information about the input data:
 --------------------------------
-The YAML files contain the polygon vertices of the ROI. The polygon vertices are used to calculate the area of the ROI.
 The HDF5 files contain the cluster centers of the ROI. The cluster centers are used to calculate the number of clusters in the ROI.
+The YAML files contain the polygon vertices of the ROI. The polygon vertices are used to calculate the area of the ROI.
+Corresponding HDF5 files and YAML files can be generated with the Picasso Software version (https://github.com/jungmannlab/picasso) version 7.3 from SMLM data (find more information in the README.md file).
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
 For example, consider the following pair of files:
 protein1_ROI_picks.yaml
