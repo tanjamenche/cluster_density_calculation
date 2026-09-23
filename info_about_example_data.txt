@@ -1,6 +1,6 @@
 # Information about example data
 
-Example data contains two folder with two subfolders each with the following structure:
+Example data contains two folders with two subfolders each with the following structure:
 
 input_data/ 
 ├── cell1/ 
