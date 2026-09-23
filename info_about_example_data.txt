@@ -3,7 +3,6 @@
 Example data contains two folder with two subfolders each with the following structure:
 
 input_data/ 
-
 ├── cell1/ 
 │ ├── protein1
 │ │ ├── cell1_protein1_ROI_picks.yaml
@@ -25,4 +24,4 @@ input_data/
   │ ├── cell2_protein2_ROI_dbscan_centers.yaml
   │ └── cell2_protein2_ROI_dbscan_centers.hdf5 
 
-Each subfolder contains a YAML file (_ROI_picks.yaml) with polygon vertex coordinates, generated with the Picasso Software (https://github.com/jungmannlab/picasso) version 7.3 (modul "Render": polygon pick), and an HDF5 file (_ROI_dbscan_centers.hdf5) with cluster centers, generated from localization data via the clustering algorithm DBSCAN with the Picasso Software (https://github.com/jungmannlab/picasso) version 7.3 and with the PicassoBatchProcess (https://github.com/HeilemannLab/PicassoBatchProcess) Software. HDF5 files generated with the Picasso Software are accompanied by a YAML file of the same filename as the HDF5 file (_ROI_dbscan_centers.yaml) containing metadata. This file is not needed for running the python script `cluster_density.py` but are needed to open the HDF5 file in Picasso.
+Each subfolder contains a YAML file (_ROI_picks.yaml) with polygon vertex coordinates, generated with the Picasso Software (https://github.com/jungmannlab/picasso) version 7.3 (modul "Render": polygon pick), and an HDF5 file (_ROI_dbscan_centers.hdf5) with cluster centers, generated from localization data via the clustering algorithm DBSCAN with the Picasso Software (https://github.com/jungmannlab/picasso) version 7.3 and with the PicassoBatchProcess (https://github.com/HeilemannLab/PicassoBatchProcess) Software. HDF5 files generated with the Picasso Software are accompanied by a YAML file of the same filename as the HDF5 file (_ROI_dbscan_centers.yaml), containing metadata. This file is not needed for running the python script `cluster_density.py` but are needed to open the HDF5 file in Picasso.
