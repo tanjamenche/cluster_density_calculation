@@ -26,7 +26,7 @@ Information about the input data:
 --------------------------------
 The HDF5 files contain the cluster centers of the ROI. The cluster centers are used to calculate the number of clusters in the ROI.
 The YAML files contain the polygon vertices of the ROI. The polygon vertices are used to calculate the area of the ROI.
-Corresponding HDF5 files and YAML files can be generated with the Picasso Software version (https://github.com/jungmannlab/picasso) version 7.3 from SMLM data (find more information in the README.md file).
+Corresponding HDF5 files and YAML files can be generated with the Picasso Software version (https://github.com/jungmannlab/picasso) version v0.7.3 from SMLM data (find more information in the README.md file).
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
 For example, consider the following pair of files:
 protein1_ROI_picks.yaml
