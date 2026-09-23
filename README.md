@@ -42,11 +42,11 @@ The script expects two types of files:
 
 ### YAML files
 
-YAML files (.yaml) contain polygon vertex coordinates under the `Vertices` field. The script was tested on YAML files (polygonal ROIs) generated with the [Picasso Software](https://github.com/jungmannlab/picasso) version 7.3 (modul "Render": polygon pick).
+YAML files (.yaml) contain polygon vertex coordinates under the `Vertices` field. The script was tested on YAML files (polygonal ROIs) generated with the [Picasso Software](https://github.com/jungmannlab/picasso) version v0.7.3 (modul "Render": polygon pick).
 
 ### HDF5 files
 
-HDF5 files (.hdf5) containing a list of cluster centers. The script was tested on HDF5 files with cluster centers generated from localization data via the clustering algorithm DBSCAN with the [Picasso Software](https://github.com/jungmannlab/picasso) version 7.3 and with the [PicassoBatchProcess](https://github.com/HeilemannLab/PicassoBatchProcess) Software.  
+HDF5 files (.hdf5) containing a list of cluster centers. The script was tested on HDF5 files with cluster centers generated from localization data via the clustering algorithm DBSCAN with the [Picasso Software](https://github.com/jungmannlab/picasso) version v0.7.3 and with the [PicassoBatchProcess](https://github.com/HeilemannLab/PicassoBatchProcess) Software.  
 The number of rows in this dataset is interpreted as the number of clusters.
 
 The script matches the YAML and HDF5 files by their base name. The base name is the filename without the suffix.
