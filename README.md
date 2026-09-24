@@ -40,9 +40,9 @@ For each matching pair of files, it:
 
 The script expects two types of files:
 
-### YAML files
+### YAML files (with ROI vertices)
 
-YAML files (.yaml) contain polygon vertex coordinates under the `Vertices` field. The script was tested on YAML files (polygonal ROIs) generated with the [Picasso Software](https://github.com/jungmannlab/picasso) version v0.7.3 (modul "Render": polygon pick).
+YAML files (.yaml) contain polygon vertex coordinates under the `Vertices` field. The script was tested on YAML files (polygonal ROIs) generated with the [Picasso Software](https://github.com/jungmannlab/picasso) version v0.7.3 (modul "Render": -> Tools -> Tool Settings -> Shape: Polygon, -> Tools -> Pick).
 
 ### HDF5 files
 
